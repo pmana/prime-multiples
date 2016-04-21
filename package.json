@@ -1,0 +1,10 @@
+{
+  "name": "prime-multiples",
+  "version": "1.0.0",
+  "description": "Outputs the first N prime numbers in a table of their multiples",
+  "main": "main.js",
+  "scripts": {
+  },
+  "author": "Phil Ananin",
+  "license": "ISC"
+}
