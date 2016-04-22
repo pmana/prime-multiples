@@ -10,6 +10,9 @@ class MultiplicationTable {
 
     // header row
     table.push([''].concat(numbers));
+
+    // body
+    table.concat(numbers.map(number => numbers.map(other => number * other)));
     return table;
   }
 }
