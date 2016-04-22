@@ -19,4 +19,10 @@ describe('Sieve', () => {
   it('should return the first 10 prime numbers in an array when 10 passed in', () => {
      expect(sieve.sieve(10)).to.eql([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
   });
+
+  it('should return the one hundred thousandth prime number (and all preceding)', () => {
+    const primes = sieve.sieve(100000), last = primes.slice(-1);
+    expect(primes.length).to.equal(100000);
+    expect(last).to.eql([1299709]);
+  });
 });
