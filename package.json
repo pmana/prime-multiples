@@ -4,6 +4,7 @@
   "description": "Outputs the first N prime numbers in a table of their multiples",
   "main": "main.js",
   "scripts": {
+    "start": "node src/main.js",
     "test": "mocha test --recursive"
   },
   "author": "Phil Ananin",
@@ -11,5 +12,9 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "prompt": "^1.0.0"
   }
 }
