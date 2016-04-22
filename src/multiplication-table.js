@@ -2,6 +2,10 @@
 
 class MultiplicationTable {
   multiply(numbers) {
+    if (!Array.isArray(numbers)) {
+      throw new Error('numbers must be an array');
+    }
+
     if (numbers.length === 0) {
       return [];
     }
