@@ -9,6 +9,10 @@ describe('MultiplicationTable', () => {
     expect(function() { table.multiply(0); }).to.throw(Error);
   });
 
+  it('should fail if an element of the array is not a number', () => {
+    expect(function() { table.multiply([1, 2, 'foo']); }).to.throw(Error);
+  });
+
   it('should return an empty array when empty array is passed in', () => {
     expect(table.multiply([])).to.be.empty;
   });
