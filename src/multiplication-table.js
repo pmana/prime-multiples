@@ -6,14 +6,12 @@ class MultiplicationTable {
       return [];
     }
 
-    let table = [];
-
     // header row
-    table.push([''].concat(numbers));
+    const headerRow = [[''].concat(numbers)];
 
     // body
-    table = table.concat(numbers.map(number => [number].concat(numbers.map(other => number * other))));
-    return table;
+    const table = numbers.map(number => [number].concat(numbers.map(other => number * other)));
+    return headerRow.concat(table);
   }
 }
 
