@@ -4,6 +4,10 @@
 // with 2, instead of generating up to a max number
 class Sieve {
   sieve(number) {
+    if (typeof number !== 'number') {
+      throw new Error('number must be a number');
+    }
+
     const primes = [], sieve = [];
     const max = number * (Math.log(number) + Math.log(Math.log(number)));
     for (let i = 2; primes.length < number; i++) {
