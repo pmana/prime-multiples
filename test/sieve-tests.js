@@ -4,6 +4,11 @@ const Sieve = require('../src/sieve.js');
 
 describe('Sieve', () => {
   const sieve = new Sieve();
+
+  it('should fail when invalid input is passed in', () => {
+    expect(function() { sieve.sieve('test'); }).to.throw(Error);
+  });
+
   it('should return an empty array when zero is passed in', () => {
     expect(sieve.sieve(0)).to.be.empty;
   });
