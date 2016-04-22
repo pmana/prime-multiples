@@ -1,0 +1,20 @@
+Running the project
+===================
+
+Prerequisites: A recent version of Node.JS
+* Install dependencies with npm install
+* Run with npm start
+
+What I'm pleased with
+=====================
+
+I'm happy that I found a way to use the Sieve of Eratosthenes without having a max number, and still have the algorithm be reasonably efficient. It turns out that there is a good mathematical bound for the max of the Nth prime that is equal to n * (log(n) + log(log(n))). I wanted to use a Sieve for this as I'm fairly sure they are the most efficient way of generating primes. I know there are other sieves that may be more efficient, however I think Eratosthenes is efficient enough for our purposes and is also nice and readable.
+
+I'm also pleased that the project is very compact and easy to follow. It's a small problem and ought to have a similarly small solution.
+
+What I'd do with more time
+==========================
+
+Now, it's time for me to admit: I'm more comfortable using an IDE. I'd have liked to use Visual Studio, however I don't have a copy available to me, so I've written a Node.JS application using Vim. I don't think it looks particularly impressive, but it does solve the problem without too much fanfare, so perhaps it's good enough. If I'd had more time I would have properly gotten to grips with Visual Studio Code and written something in C#, as that seems to be your main language.
+
+As for what's missing, well, integration tests would be a big one. I'd like to have tests for the console input/output and checking that all of the components are glued together. The reason these are missing is that I'm a little short on time right now and it doesn't look trivial. I'd also add logging for each component as though this were a piece of production software. That said, the brief doesn't mention it so perhaps it's better to be Lean and not write it until it's needed.
