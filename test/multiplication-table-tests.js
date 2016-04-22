@@ -15,4 +15,17 @@ describe('MultiplicationTable', () => {
   it('should return the number squared when one number passed in, and include the number as a row header', () => {
     expect(table.multiply([2])[1]).to.eql([2, 4]);
   });
+
+  it('should square all numbers in a table', () => {
+    const numbers = [1, 2, 5, 10, 25];
+    const expected = [
+      ['', 1, 2, 5, 10, 25],
+      [1, 1, 2, 5, 10, 25],
+      [2, 2, 4, 10, 20, 50],
+      [5, 5, 10, 25, 50, 125],
+      [10, 10, 20, 50, 100, 250],
+      [25, 25, 50, 125, 250, 625]
+    ];
+    expect(table.multiply(numbers)).to.eql(expected);
+  });
 });
