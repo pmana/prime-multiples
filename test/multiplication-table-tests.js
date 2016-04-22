@@ -4,6 +4,11 @@ const MultiplcationTable = require('../src/multiplication-table.js');
 
 describe('MultiplicationTable', () => {
   const table = new MultiplcationTable();
+
+  it('should fail if a non-array is passed in', () => {
+    expect(function() { table.multiply(0); }).to.throw(Error);
+  });
+
   it('should return an empty array when empty array is passed in', () => {
     expect(table.multiply([])).to.be.empty;
   });
