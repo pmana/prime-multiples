@@ -2,7 +2,15 @@
 
 class MultiplicationTable {
   multiply(numbers) {
-    return [];
+    if (numbers.length === 0) {
+      return [];
+    }
+
+    const table = [];
+
+    // header row
+    table.push([''].concat(numbers));
+    return table;
   }
 }
 

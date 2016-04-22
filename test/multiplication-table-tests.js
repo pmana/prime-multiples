@@ -9,6 +9,6 @@ describe('MultiplicationTable', () => {
   });
 
   it('should include a header row', () => {
-    expect(table.multiply([1])[0]).to.eql([,1]);
+    expect(table.multiply([1])[0]).to.eql(['',1]);
   });
 });
