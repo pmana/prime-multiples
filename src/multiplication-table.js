@@ -6,6 +6,10 @@ class MultiplicationTable {
       throw new Error('numbers must be an array');
     }
 
+    if (!numbers.every(x => typeof x === 'number')) {
+      throw new Error('all elements of numbers must be a number');
+    }
+
     if (numbers.length === 0) {
       return [];
     }
