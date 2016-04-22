@@ -13,6 +13,6 @@ describe('MultiplicationTable', () => {
   });
 
   it('should return the number squared when one number passed in, and include the number as a row header', () => {
-    expect(table.multiply([2])[0]).to.eql([2, 4]);
+    expect(table.multiply([2])[1]).to.eql([2, 4]);
   });
 });
