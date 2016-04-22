@@ -9,6 +9,10 @@ describe('MultiplicationTable', () => {
   });
 
   it('should include a header row', () => {
-    expect(table.multiply([1])[0]).to.eql(['',1]);
+    expect(table.multiply([1])[0]).to.eql(['', 1]);
+  });
+
+  it('should return the number squared when one number passed in, and include the number as a row header', () => {
+    expect(table.multiply([2])[0]).to.eql([1, 1]);
   });
 });
