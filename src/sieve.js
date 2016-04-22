@@ -1,5 +1,7 @@
 'use strict';
 
+// Sieve of Eratosthenes with a slight twist - generates a number of primes starting
+// with 2, instead of generating up to a max number
 class Sieve {
   sieve(number) {
     const primes = [], sieve = [];
